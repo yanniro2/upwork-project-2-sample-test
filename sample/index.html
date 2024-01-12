@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-screen h-screen bg-gray-200 font-poppins">
+    <!-- popup -->
+    <section class="w-screen h-screen fixed top-0 left-0 right-0 bottom-0 z-[100] flex items-center justify-center">
+        <div class="w-3/5 h-min bg-white rounded-xl drop-shadow p-3 flex flex-col gap-5">
+
+            <!-- Banner -->
+            <div class="bg-[#242424] rounded-xl relative">
+                <img src="./assets/img/banner.png" alt="img banner" class="w-full h-full object-fill">
+                <h1 class="team-support">
+                    Support
+                    The Team
+                </h1>
+            </div>
+
+
+            <!-- Process -->
+            <div class="bg-[#F5F8FA] rounded-full p-3 px-[2rem] flex items-center justify-between">
+                <!-- Step-1 -->
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-[2rem] h-[2rem] bg-[#EF0325] flex items-center justify-center text-white font-semibold rounded-full">
+                        1</div>
+                    <h3 class="capitalize font-semibold">amount</h3>
+                    <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="ml-[5rem]">
+                        <path d="M1 1L4.58579 4.58579C5.36684 5.36684 5.36683 6.63317 4.58579 7.41421L1 11"
+                            stroke="black" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+
+                <!-- Step-2 -->
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-[2rem] h-[2rem] bg-[#E1E1E6] flex items-center justify-center  font-semibold rounded-full text-[#6B7578]">
+                        2</div>
+                    <h3 class="capitalize font-semibold text-[#6B7578]">Details</h3>
+                    <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="ml-[5rem]">
+                        <path d="M1 1L4.58579 4.58579C5.36684 5.36684 5.36683 6.63317 4.58579 7.41421L1 11"
+                            stroke="black" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <!-- Step-3 -->
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-[2rem] h-[2rem] bg-[#E1E1E6] flex items-center justify-center  font-semibold rounded-full text-[#6B7578]">
+                        3</div>
+                    <h3 class="capitalize font-semibold text-[#6B7578]">Payment</h3>
+
+                </div>
+            </div>
+
+
+            <!-- Amount Selected -->
+            <div class="flex gap-1 flex-col p-3 gap-3 pb-0">
+                <h3 class="">Amount to be given</h3>
+                <input type="text" placeholder="Enter the amount"
+                    class="bg-[#F5F8FA] p-3 w-full rounded-full pl-[2rem] placeholder:font-normal">
+
+
+
+                <!-- Buttons Group -->
+                <div class="flex items-center justify-between">
+                    <button class="btn">$10</button>
+                    <button class="btn">$25</button>
+                    <button class="btn">$50</button>
+                    <button class="btn">$100</button>
+                </div>
+
+                <div class="flex items-center justify-center p-[1rem]">
+                    <button class="btn-primary">Donate
+                        Now
+
+                        <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="bg-[#FFFFFF38] rounded-full">
+                            <path
+                                d="M17.3329 13.0373C17.5008 12.8693 17.7306 12.7633 17.9958 12.7633L28.7261 12.7633C29.2388 12.7633 29.6631 13.1875 29.6631 13.7002L29.6631 24.4305C29.6631 24.9432 29.2388 25.3675 28.7261 25.3675C28.2135 25.3675 27.7892 24.9432 27.7892 24.4305L27.7892 14.6371L17.9958 14.6371C17.4831 14.6371 17.0589 14.2128 17.0589 13.7002C17.05 13.4439 17.1649 13.2052 17.3329 13.0373Z"
+                                fill="white" />
+                            <path
+                                d="M13.0372 28.0633L27.913 13.1876C28.2754 12.8252 28.8764 12.8252 29.2388 13.1876C29.6012 13.5499 29.6012 14.151 29.2388 14.5134L14.3631 29.3891C14.0007 29.7515 13.3996 29.7515 13.0372 29.3891C12.6748 29.0267 12.6748 28.4257 13.0372 28.0633Z"
+                                fill="white" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
