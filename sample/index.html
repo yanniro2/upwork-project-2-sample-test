@@ -17,7 +17,7 @@
 
 <body class="w-screen h-screen bg-gray-200 font-poppins">
     <!-- popup -->
-    <section class="w-screen h-screen fixed top-0 left-0 right-0 bottom-0 z-[100] flex items-center justify-center">
+    <section class="w-screen h-screen fixed top-0 left-0 right-0 bottom-0 z-[100] flex items-center justify-center ">
         <div class="w-3/5 h-min bg-white rounded-xl drop-shadow p-3 flex flex-col gap-5">
 
             <!-- Banner -->
@@ -74,16 +74,16 @@
             <div class="flex gap-1 flex-col p-3 gap-3 pb-0">
                 <h3 class="">Amount to be given</h3>
                 <input type="text" placeholder="Enter the amount"
-                    class="bg-[#F5F8FA] p-3 w-full rounded-full pl-[2rem] placeholder:font-normal">
+                    class="bg-[#F5F8FA] p-3 w-full rounded-full pl-[2rem] placeholder:font-normal outline-none" id="donationAmount">
 
 
 
                 <!-- Buttons Group -->
                 <div class="flex items-center justify-between">
-                    <button class="btn">$10</button>
-                    <button class="btn">$25</button>
-                    <button class="btn">$50</button>
-                    <button class="btn">$100</button>
+                    <button class="btn" onclick="updateAmount(10)">$10</button>
+                    <button class="btn" onclick="updateAmount(25)">$25</button>
+                    <button class="btn" onclick="updateAmount(50)">$50</button>
+                    <button class="btn" onclick="updateAmount(100)">$100</button>
                 </div>
 
                 <div class="flex items-center justify-center p-[1rem]">
@@ -106,7 +106,22 @@
         </div>
 
     </section>
+    <script>
+        function updateAmount(amount) {
+            document.getElementById('donationAmount').value = amount;
 
+            // Remove "active" class from all buttons
+            var buttons = document.querySelectorAll('.btn');
+            buttons.forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+
+            // Add "active" class to the clicked button
+            var activeButton = event.target;
+            activeButton.classList.add('active');
+        }
+    </script>
+    
 </body>
 
 </html>
